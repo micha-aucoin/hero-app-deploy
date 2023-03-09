@@ -18,7 +18,7 @@ spec:
       #   - name: registry-key
       containers:
         - name: heroes-app
-          image: ghcr.io/micha-aucoin/hero:sha-2540bf6
+          image: ghcr.io/micha-aucoin/hero-app:sha-00a6798
           imagePullPolicy: Always
           ports:
             - containerPort: 80
