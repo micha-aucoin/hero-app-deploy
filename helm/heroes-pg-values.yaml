@@ -1,0 +1,14 @@
+# bitnami/postgresql helm chart values configuration
+# $ helm repo add bitnami https://charts.bitnami.com/bitnami
+# $ helm install -f heroes-pg-values.yaml bitnami/postgresql
+image:
+  tag: 13
+auth:
+  username: "hero"
+  password: "heroPass123"
+  database: "heroes_db"
+architecture: replication
+readReplicas:
+  replicaCount: 3
+  persistence:
+    storageClass: "linode-block-storage"

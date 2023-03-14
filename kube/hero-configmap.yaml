@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: heroes-pg-configmap
 data:
-  database_url: heroes-pg-service
+  database_url: heroes-pg-postgresql-primary
   database: heroes_db
